@@ -1,0 +1,41 @@
+/* src/styles/Settings.css */
+.settings-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress {
+    margin-top: 20px;
+}
+
+.error-message {
+    margin-top: 20px;
+    color: #ff5555;
+}
+
+.select-field {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.text-field {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.start-button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #00ff7f;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #00cc66;
+}

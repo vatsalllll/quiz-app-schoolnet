@@ -1,0 +1,38 @@
+/* src/styles/Questions.css */
+.question-container {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.question-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.question-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.answer-option {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.answer-option:hover {
+    background-color: #005fa3;
+}
+
+.score-display {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #00ff7f;
+}
