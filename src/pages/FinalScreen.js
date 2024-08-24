@@ -1,30 +1,31 @@
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router";
-import { handleAmountChange, handleScoreChange } from "../redux/actions";
 import '../styles/FinalScreen.css';
 
 const FinalScreen = () => {
-  const disptach = useDispatch();
   const history = useHistory();
-  const { score } = useSelector((state) => state);
+  const score = useSelector((state) => state.score);
 
   const handleBackToSettings = () => {
-    disptach(handleScoreChange(0));
-    disptach(handleAmountChange(50));
     history.push("/");
   };
 
   return (
-    <Box mt={30}>
-      <Typography variant="h3" fontWeight="bold" mb={3}>
-        Final Score {score}
+    <Box className="quiz-container final-screen-container">
+      <Typography variant="h3" className="final-score">
+        Final Score: {score}
       </Typography>
-      <Button onClick={handleBackToSettings} variant="outlined">
-        back to settings!
-      </Button>
+      <Box mt={3}>
+        <Button
+          variant="contained"
+          className="back-button"
+          onClick={handleBackToSettings}
+        >
+          Back to Settings
+        </Button>
+      </Box>
     </Box>
   );
 };

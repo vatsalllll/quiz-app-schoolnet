@@ -1,27 +1,69 @@
-/* src/styles/FinalScreen.css */
 .final-screen-container {
-    margin-top: 30px;
+    margin-top: 15px;
     text-align: center;
-    color: #fff;
+    padding: 8px;
+    color: black;
+}
+
+@media (min-width: 600px) {
+    .final-screen-container {
+        margin-top: 20px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 960px) {
+    .final-screen-container {
+        margin-top: 30px;
+        padding: 20px;
+    }
 }
 
 .final-score {
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 2.5rem;
-    color: #00ff7f;
+    color: #28a745; /* Green color */
+    font-size: 2rem;
+}
+
+@media (min-width: 600px) {
+    .final-score {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .final-score {
+        font-size: 3rem;
+    }
 }
 
 .back-button {
-    padding: 10px 20px;
-    background-color: #00ff7f;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #28a745; /* Green background */
     border: none;
     border-radius: 5px;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 600px) {
+    .back-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 960px) {
+    .back-button {
+        font-size: 1.125rem;
+        padding: 12px 24px;
+    }
 }
 
 .back-button:hover {
-    background-color: #00cc66;
+    background-color: #218838; /* Darker green on hover */
 }

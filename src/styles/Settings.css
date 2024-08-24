@@ -1,41 +1,28 @@
-/* src/styles/Settings.css */
 .settings-form {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 1.5rem;
+    background-color: #ffffff; /* White background */
+    padding: 1rem;
+    border-radius: 8px;
+    color: #333; /* Dark grey text color */
+    width: 90%;
+    max-width: 600px;
+    margin: 5vh auto;
+    box-shadow: 0 4px 8px rgba(211, 211, 211, 0.5); /* Soft off-white shadow */
 }
 
-.circular-progress {
-    margin-top: 20px;
+.select-field label,
+.text-field label {
+    color: #333 !important; /* Dark grey label color */
 }
 
-.error-message {
-    margin-top: 20px;
-    color: #ff5555;
+.select-field .MuiInputBase-root,
+.text-field .MuiInputBase-root {
+    color: #333 !important; /* Dark grey input text color */
 }
 
-.select-field {
-    margin: 10px 0;
-    width: 100%;
-}
-
-.text-field {
-    margin-top: 20px;
-    width: 100%;
-}
-
-.start-button {
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #00ff7f;
-    border: none;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.start-button:hover {
-    background-color: #00cc66;
+.select-field .MuiOutlinedInput-notchedOutline,
+.text-field .MuiOutlinedInput-notchedOutline {
+    border-color: #28a745 !important; /* Green border color */
 }
