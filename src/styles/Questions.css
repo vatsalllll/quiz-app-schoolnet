@@ -93,4 +93,10 @@
     .score-text {
         font-size: 1.5rem;
     }
+    .score-progress {
+        margin-top: 10px;
+        height: 10px;
+        border-radius: 5px;
+      }
+      
 }

@@ -1,4 +1,4 @@
-import { Button, CircularProgress, Typography } from "@mui/material";
+import { Button, CircularProgress, Typography, LinearProgress } from "@mui/material";
 import { Box } from "@mui/system";
 import { decode } from "html-entities";
 import { useEffect, useState } from "react";
@@ -56,6 +56,8 @@ const Questions = () => {
     }
   };
 
+  const maxScore = amount_of_question; // Maximum score based on the number of questions
+
   return (
     <Box className="quiz-container">
       <Typography variant="h4" className="quiz-title">
@@ -76,7 +78,12 @@ const Questions = () => {
         </Button>
       ))}
       <Box className="score-text">
-        Score: {score}
+        <Typography variant="h6">Score: {score}</Typography>
+        <LinearProgress 
+          variant="determinate" 
+          value={(score / maxScore) * 100} 
+          className="score-progress"
+        />
       </Box>
     </Box>
   );
